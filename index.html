@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Midnight Science Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <!--NAVIGATION BAR-->
+    <nav class="navbar">
+        <div class="navbar__container">
+
+            <a href="/" id="navbar__logo">MIDNIGHT SCIENCE</a>
+            
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/about.html" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/docs.html" class="navbar__links">Docs</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Sign Up</a>
+                </li>
+            </ul>
+
+            <!--Enables toggle menu on mobile or slim screens-->
+            <div class="navbar__toggle" id="mobile-menu"> 
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div> <!--toggle buttons in the navbar-->
+
+        </div>
+    </nav>
+    <!--HERO SECTION-->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>MIDNIGHT SCIENCE</h1>
+                <h2>Goals</h2>
+                <p> what makes us different</p>
+                <button class="main__btn"><a href="/">Get Started</a></button>
+            </div>
+            <div class="main__img--container">
+                <img src="images/logoms.png" alt="images/logo.svg" alt='pic' id="main__img"/>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
